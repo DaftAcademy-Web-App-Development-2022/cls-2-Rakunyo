@@ -1,3 +1,3 @@
-# Hippoptype <- nazwa profilu na githubie
+# Rakunyo
 
-- [deploy](https://cls-1-hippopotype.vercel.app/)
+- [deploy](https://daftacademy-rakunyo.vercel.app/)
