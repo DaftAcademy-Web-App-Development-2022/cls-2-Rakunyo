@@ -1,3 +1,3 @@
 # Rakunyo
 
-- [deploy](https://daftacademy-rakunyo.vercel.app/)
+- [deploy](https://cls-2-rakunyo.vercel.app/)
