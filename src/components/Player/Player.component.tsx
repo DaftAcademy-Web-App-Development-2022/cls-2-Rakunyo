@@ -1,23 +1,23 @@
 import React from 'react';
+import {
+  StateButton, 
+  ProgressBar
+} from './index'
 import usePlayer from "~/hooks/usePlayer.hook";
-import trackData from "~/data/trackData.json"
 
 import styles from "./Player.module.css";
 
 const Player = () => {
-  const { state, actions} = usePlayer()
+  const { state } = usePlayer()
+  
   return (
     <div className={styles.root}>
-      {state.playing ? (
-        <button onClick={() => actions.pause()}>pause</button>
-      ) : (
-        <button onClick={() => actions.play({
-          id: trackData.id,
-          name: trackData.name,
-          src: trackData.preview_url,
-          artists: trackData.artists.map(artist => artist.name)
-        })}>play</button>
-      )}
+      <StateButton />
+      <div className={styles.progress}>
+        <p className={styles.trackName}>{state.meta?.name}</p>
+        <ProgressBar />
+        <p className={styles.trackArtist}>{state.meta?.artists}</p>
+      </div>
     </div>
   );
 };
