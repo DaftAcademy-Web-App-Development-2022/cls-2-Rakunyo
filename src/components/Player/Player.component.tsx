@@ -1,8 +1,7 @@
 import React from 'react';
 import {
   StateButton, 
-  ProgressBar,
-  Time
+  ProgressBar
 } from './index'
 import usePlayer from "~/hooks/usePlayer.hook";
 
@@ -15,11 +14,10 @@ const Player = () => {
     <div className={styles.root}>
       <StateButton />
       <div className={styles.progress}>
-        {state.meta?.name}
+        <p className={styles.trackName}>{state.meta?.name}</p>
         <ProgressBar />
-        {state.meta?.artists}
+        <p className={styles.trackArtist}>{state.meta?.artists}</p>
       </div>
-      <Time />
     </div>
   );
 };

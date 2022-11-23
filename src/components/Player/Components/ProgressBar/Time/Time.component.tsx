@@ -1,6 +1,8 @@
 import React from "react";
 import usePlayer from "~/hooks/usePlayer.hook";
 
+import styles from "./Time.module.css"
+
 const Time = () => {
   const { state } = usePlayer()
 
@@ -9,7 +11,7 @@ const Time = () => {
 
   return (
     <div>
-      {currentTime}/{duration}
+      <p className={styles.time}>{currentTime}/{duration}</p>
     </div>
   )
 }

@@ -1,3 +1,15 @@
 .root {
     @apply p-4 flex items-center space-x-5
 }
+
+.progress {
+    @apply w-full
+}
+
+.trackArtist {
+    @apply text-[12px] text-ui1 mt-1
+}
+
+.trackName {
+    @apply text-[16px] text-purple-100 mb-1
+}
