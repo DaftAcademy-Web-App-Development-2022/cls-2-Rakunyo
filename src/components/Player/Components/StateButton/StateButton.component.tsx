@@ -4,7 +4,7 @@ import trackData from "~/data/trackData.json"
 
 import { PauseCircleIcon, PlayCircleIcon } from "@heroicons/react/20/solid"
 
-import styles from "../../Player.module.css";
+import styles from "./StateButton.module.css";
 
 const StateButton = () => {
   const { state, actions } = usePlayer()
