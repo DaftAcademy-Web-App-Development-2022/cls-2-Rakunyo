@@ -1,3 +1,7 @@
 .root {
     @apply p-4
 }
+
+.icon {
+    @apply h-10 w-10;
+}
