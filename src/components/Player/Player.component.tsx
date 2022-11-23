@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   StateButton, 
-  ProgressBar
+  ProgressBar,
+  SoundButton
 } from './index'
 import usePlayer from "~/hooks/usePlayer.hook";
 
@@ -18,6 +19,7 @@ const Player = () => {
         <ProgressBar />
         <p className={styles.trackArtist}>{state.meta?.artists}</p>
       </div>
+      <SoundButton />
     </div>
   );
 };
